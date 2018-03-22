@@ -101,7 +101,7 @@ Each of these delegate resolvers in essence provides a convenience API for sendi
 Delegate resolver have the following interface:
 
 ```js
-(args: any, info: GraphQLResolveInfo | string): Promise<T>
+(args: any, info: GraphQLResolveInfo | InfoFieldSelection | string): Promise<T>
 ```
 
 The input arguments are used as follows:

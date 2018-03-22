@@ -1379,9 +1379,8 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.2:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
 
-graphql-binding@1.2.5:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/graphql-binding/-/graphql-binding-1.2.5.tgz#1c45b9da055cb0722f0348b6354be2e11b0a8c17"
+"graphql-binding@file:../graphql-binding":
+  version "0.0.0-semantic-release"
   dependencies:
     graphql-tools "2.21.0"
     iterall "1.2.2"

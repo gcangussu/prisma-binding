@@ -1,4 +1,4 @@
-import { Binding } from 'graphql-binding'
+import { Binding, InfoFieldSelection } from 'graphql-binding'
 import { Exists, PrismaOptions, QueryMap, SubscriptionMap } from './types'
 import { sign } from 'jsonwebtoken'
 import { makePrismaLink } from './link'
@@ -79,7 +79,7 @@ export class Prisma extends Binding<QueryMap, SubscriptionMap> {
     context: {
       [key: string]: any
     },
-    info?: GraphQLResolveInfo | string,
+    info?: GraphQLResolveInfo | InfoFieldSelection | string,
   ): Promise<boolean> {
     this.before()
     return this
